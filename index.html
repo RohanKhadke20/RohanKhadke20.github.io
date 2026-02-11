@@ -172,9 +172,7 @@
 
         .typewriter-text {
             background: var(--accent-gradient);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
             border-right: 4px solid var(--accent-red);
             padding-right: 10px;
             animation: blink 0.75s step-end infinite;
@@ -212,7 +210,7 @@
         .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 20px; }
         .skill-item { background: var(--surface-color); border: var(--glass-border); padding: 18px; border-radius: 8px; text-align: left; transition: all 0.3s ease; }
         .skill-item:hover { border-color: var(--accent-gold); transform: translateY(-5px); background: var(--surface-hover); }
-        .skill-item i { font-size: 1.6rem; margin-right: 12px; background: var(--accent-gradient); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .skill-item i { font-size: 1.6rem; margin-right: 12px; background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .skill-name { display:flex; align-items:center; font-weight:700; color: var(--text-primary); margin-bottom:8px; }
         .skill-meta { display:flex; justify-content:space-between; gap:12px; align-items:center; }
         .skill-bar { height:8px; background:#0a0a0a; border-radius:6px; overflow:hidden; border:1px solid rgba(255,255,255,0.03); }
